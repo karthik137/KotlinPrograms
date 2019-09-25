@@ -91,6 +91,36 @@ fun main(){
         println("$index index value is ${numbers1[index]}")
     }
 
+    // Conditions
 
+    // Kotlin has three types of condition statements: the if, if..else and when
 
+    // if statement
+    val number = 20
+    if (number % 2 == 0){
+        print("$number is divisible by 2")
+    }
+
+    // we can also check whether a variable is of a particular type
+    if (20 is Int){
+        println("Number is of integer type")
+    }
+
+    // if..else statement
+
+    // One major feature that distinguishes if..else in kotlin from other programming langauge is
+    // the ability to return value
+    // in Kotlin if..else can be used as an expression
+
+    val number2 = 13
+
+    val result = if(number2 % 2 == 0){
+            print("Hey2")
+            "$number is divisible by 2"
+    }else{
+            print("hey3")
+            print("10")
+            "$number is not divisible by 2"
+    }
+    println("Printing if else result : "+result)
 }
