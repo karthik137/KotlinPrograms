@@ -123,4 +123,29 @@ fun main(){
             "$number is not divisible by 2"
     }
     println("Printing if else result : "+result)
+
+    // when expression
+    // kotlin introduced when construct as a replacement
+    // to switch statement
+
+    var number3 = 1
+    when (number3) {
+        1 -> println("Number is 1")
+        else -> println("number is neither 1,2, or 3")
+    }
+
+    // We can execute when without passing any argument
+    when {
+        number3 == 1 -> println("Number is 1")
+        number3 == 2 -> println("Number is 2")
+        else -> println("number is neither 1, 2 or 3")
+    }
+
+    // we can combine test values in a single branch
+    var number4 = 2
+    when (number4){
+        1,2 -> println("Number is either 1 or 2")
+        3 -> println("number is 3")
+    }
+
 }
