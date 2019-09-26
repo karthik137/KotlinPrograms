@@ -176,5 +176,44 @@ fun main() {
     val callingCodesMap: Map<Int, String> = mapOf(234 to "yukihara", 343 to "Tokyo")
     println("$callingCodesMap")
 
+    //Collections operation Functions
+    //Kotlin provides us with many useful operator functions called extension functions that can be invoked
+    // on collections.
+
+    // last() Function
+    // This operator function returns the last element in a collection such as a list or set.
+
+    val stringList1: List<String> = listOf("int", "the", "club");
+    println(stringList1.last())
+
+    //first() Function
+
+    // first() function returns the first element of the collection
+
+    println(stringList1.first())
+
+
+    // max() Function
+    // Invoking this operator function on a collection such as a list or set returns the
+    // largest element.
+
+    val intgList: List<Int> = listOf(1,3,4)
+
+    println(intgList.max())
+
+    // Drop function
+    // Calling this operator function returns a new list or set containing all elements except the first n elements.
+    println(stringList1.drop(2))
+    println(stringList1)
+
+    // Plus function
+    // This operator function returns a collection containing all elements of the original
+    // and then the given element if it is not already in the collection.
+    println(intgList.plus(6))
+
+    // Minus function
+    // Calling this operator function will return an average number of elements in the collection
+    println(intgList.average())
+
 
 }
