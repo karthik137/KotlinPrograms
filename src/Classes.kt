@@ -206,7 +206,6 @@ class Dog private constructor() {
     }
 }
 
-
 fun main(){
 
     val person = Person.create("kirito")
